@@ -1,0 +1,29 @@
+{
+  "name": "pomelo2-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aslijia/pomelo2-admin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aslijia/pomelo2-admin/issues"
+  },
+  "homepage": "https://github.com/Aslijia/pomelo2-admin#readme",
+  "dependencies": {
+    "mqtt-connection": "^4.0.0",
+    "pomelo2-logger": "^1.0.0",
+    "pomelo2-monitor": "^1.0.0",
+    "pomelo2-scheduler": "^1.0.0"
+  }
+}
