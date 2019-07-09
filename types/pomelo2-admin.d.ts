@@ -25,7 +25,7 @@ export interface Module {
  *                 opts.info 	{Object} more server info for current server, {id, serverType, host, port}
  * @api public
  */
-export interface ConsoleService extends EventEmitter {
+export class ConsoleService extends EventEmitter {
 
     /**
      * start master or monitor
