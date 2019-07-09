@@ -19,7 +19,10 @@ export interface Agent extends EventEmitter {
     get(moduleId: string): Module;
 
     notify(moduleId: string, msg: object): void;
+    /// request for monitor 
     request(moduleId: string, msg: object, cb: Function): void;
+    /// request for master
+    request(serverId: string, moduleId: string, msg: object, cb: Function): void;
 }
 
 /**
