@@ -1,6 +1,6 @@
 {
   "name": "pomelo2-admin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "types": "./types/pomelo2-admin.d.ts",

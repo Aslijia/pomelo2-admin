@@ -11,6 +11,17 @@ export interface Module {
     clientHandler(agent: object, msg: any, cb: Function): void;
 }
 
+export interface Agent extends EventEmitter {
+    connect(port: string | number, host: string, cb: Function): void;
+    close(): void;
+
+    set(moduleId: string, value: object): void;
+    get(moduleId: string): Module;
+
+    notify(moduleId: string, msg: object): void;
+    request(moduleId: string, msg: object, cb: Function): void;
+}
+
 /**
  * ConsoleService Constructor
  *
@@ -25,8 +36,8 @@ export interface Module {
  *                 opts.info 	{Object} more server info for current server, {id, serverType, host, port}
  * @api public
  */
-export class ConsoleService extends EventEmitter {
-
+export interface ConsoleService extends EventEmitter {
+    agent: Agent;
     /**
      * start master or monitor
      *
