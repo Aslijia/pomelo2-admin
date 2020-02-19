@@ -71,6 +71,7 @@ export function createMasterConsole(opts: any): ConsoleService;
 export function createMonitorConsole(opts: any): ConsoleService;
 
 export class adminClient extends EventEmitter {
+    constructor(opt: any);
     connect(id: string, host: string, port: string | number, cb: Function): void;
     request(moduleId: string, msg: object, cb: Function): void;
     notify(moduleId: string, msg: object): void;
