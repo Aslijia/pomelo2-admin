@@ -1,6 +1,6 @@
 {
   "name": "pomelo2-admin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "types": "./types/pomelo2-admin.d.ts",
@@ -26,8 +26,5 @@
     "pomelo2-logger": "^1.0.0",
     "pomelo2-monitor": "^1.0.0",
     "pomelo2-scheduler": "^1.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^12.6.1"
   }
 }
